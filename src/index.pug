@@ -9,11 +9,24 @@ html(lang="ru")
         title Document
         include pug/head.pug
     body
-        .container
-            h1 Hi from PUG! 
-            +InputRadio('name', 'test')
+        header
+            .container
+                a.logo
+                    img(src="assets/images/logo.png")
+                .menu__wrapper
+                    a(href="").active Главная
+                    a(href="") О нас
+                    a(href="") Все сборы программ
+                    a(href="") Поступления
+                    a(href="") Помощь
+                    a(href="") Контакты
+                .contacts__wrapper
+                    a(href="").contacts.phone +7 (123) 456-78-90
+                    a(href="").contacts.mail info@sunwayfund.ru 
+                    .icons__wrapper
+                        a(href="").tg
+                        a(href="").inst
+                        a(href="").fb
+                        a(href="").vk
             
-            +Modal('test', 'ModalTemplate')
-            button(modal="test") Modal Test
-
         include pug/scripts.pug
