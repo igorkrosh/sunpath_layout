@@ -159,6 +159,11 @@ header
         position: relative;
     }
 
+    a:hover
+    {
+        background: rgba(0, 0, 0, 0.3);
+    }
+
     a:after
     {
         content: '';
