@@ -115,6 +115,20 @@ function InitOwlCarousel()
         autoHeight: true,
         navContainer: 'section.need__help .navs',
     });
+
+    $('section.successful_stories .owl-carousel').owlCarousel({
+        loop: true,
+        center: true,
+        autoWidth: true,
+        navContainer: 'section.successful_stories .navs',
+        nav: true
+    }).on('translated.owl.carousel', function(event) {
+        $('section.successful_stories .owl-carousel .center').prev().addClass('big');
+    }).on('change.owl.carousel', function(event) {
+        $('section.successful_stories .owl-carousel .big').removeClass('big');
+    })
+
+    $('section.successful_stories .owl-carousel .center').prev().addClass('big');
 }
 
 function SetProgress()

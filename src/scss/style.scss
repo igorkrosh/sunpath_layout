@@ -424,6 +424,7 @@ section.main__section:after
     padding: 10px 15px;
     border-radius: 15px;
     transition: 0.3s;
+    display: inline-block;
 }
 
 .btn.yellow
@@ -618,7 +619,131 @@ section.need__help
             font-size: 0;
         }
     }
+}
 
+section.successful_stories
+{
+    overflow-x: hidden;
+
+    .owl-item
+    {
+        -webkit-transform: initial;
+        padding-top: 100px;
+    }
+    .item
+    {
+        width: 430px;
+        height: 280px;
+        position: relative;
+        transition: 0.3s;
+
+        .bg
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+
+        .bg__wrapper
+        {
+            width: 100%;
+            height: 100%;
+            transition: 0.3s;
+            position: absolute;
+            
+            left: 0;
+            bottom: 0;
+
+            .desc
+            {
+                position: absolute;
+                left: 0;
+                top: 0;
+                padding: 20px;
+                z-index: 2;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 80%;
+
+                .item__title
+                {
+                    color: #fff;
+                    font-weight: 700;
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                }
+
+                .btn
+                {
+                    min-height: 35px;
+                    text-align: center;
+                    font-size: 15px;
+                    min-width: 130px;
+                    opacity: 0;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+
+    .big .item .bg__wrapper
+    {
+        
+        width: 125%;
+        height: 125%;
+        z-index: 10;
+
+        .btn
+        {
+            opacity: 1;
+        }
+        
+    }
+
+    .slider__wrapper
+    {
+        position: relative;
+
+        .navs
+        {
+            position: absolute;
+            left: 45%;
+            top: 5%;
+            z-index: 10;
+
+            .owl-prev
+            {
+                width: 58px;
+                height: 56px;
+                background: url(../images/icons/btn_left.png);
+                border: none;
+                padding: 0;
+                font-size: 0;
+                margin: 5px;
+            }
+    
+            .owl-next
+            {
+                width: 58px;
+                height: 56px;
+                background: url(../images/icons/btn_right.png);
+                border: none;
+                padding: 0;
+                font-size: 0;
+                margin: 5px;
+            }
+        }
+    }
+
+    .owl-stage-outer
+    {
+        
+    }
 }
 
 @import 'responce';
