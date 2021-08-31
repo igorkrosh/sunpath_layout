@@ -498,4 +498,127 @@ section.about_us
     }
 }
 
+section.need__help
+{
+    .container
+    {
+        position: relative;
+        padding: 0 60px;
+    }
+    .card__wrapper
+    {
+        padding: 20px;
+    }
+    .card
+    {
+        width: 100%;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        padding-bottom: 30px;
+
+        .image__wrapper
+        {
+            img
+            {
+                width: 100%;
+                height: 240px;
+                object-fit: cover;
+            }
+        }
+
+        .card__title
+        {
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .progress__wrapper
+        {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: auto;
+
+            .progress
+            {
+                width: 100%;
+                margin: 25px auto;
+                height: 5px;
+                background: #eeeeee;
+                position: relative;
+            }
+
+            .line
+            {
+                position: absolute;
+                width: 0%;
+                height: 100%;
+                background: #ffcd05;
+                left: 0;
+                top: 0;
+            }
+        }
+
+        .price__wrapper
+        {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            
+            .price
+            {
+                font-weight: 700;
+            }
+
+            .collected .price
+            {
+                color: #6780da;
+            }
+        }
+
+        .btn__wrapper
+        {
+            text-align: center;
+        }
+
+        .desc
+        {
+            padding: 20px;
+        }
+    }
+
+    .navs
+    {
+        .owl-prev
+        {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 58px;
+            height: 56px;
+            background: url(../images/icons/btn_left.png);
+            border: none;
+            padding: 0;
+            font-size: 0;
+        }
+
+        .owl-next
+        {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 58px;
+            height: 56px;
+            background: url(../images/icons/btn_right.png);
+            border: none;
+            padding: 0;
+            font-size: 0;
+        }
+    }
+
+}
+
 @import 'responce';

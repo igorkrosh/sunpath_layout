@@ -6,6 +6,8 @@ function Core()
     SetModal();
 
     InitOwlCarousel();
+
+    SetProgress();
 }
 
 function SetTabSwitcher()
@@ -107,4 +109,21 @@ function InitOwlCarousel()
         dotsContainer: 'section.main__section .dots',
         autoHeight: true
     });
+
+    $('section.need__help .owl-carousel').owlCarousel({
+        items: 3,
+        autoHeight: true,
+        navContainer: 'section.need__help .navs',
+    });
+}
+
+function SetProgress()
+{
+    let progressArray = $('.card .progress');
+
+    for (let progress of progressArray)
+    {
+        let value = $(progress).attr('value');
+        $(progress).find('.line').css(`width`, `${value}%`);
+    }
 }
