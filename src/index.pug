@@ -28,5 +28,43 @@ html(lang="ru")
                         a(href="").inst
                         a(href="").fb
                         a(href="").vk
+        section.main__section
+            <video class="bg__video" preload="auto" autoplay="true" loop="true" muted="muted" poster="assets/images/bg/first_section.jpg">
+                <source src="assets/images/bg.mp4" type='video/mp4' />
+            </video>
+            .container
+                .slider__wrapper
+                    .slider.owl-carousel
+                        .item
+                            h2
+                                |Помощь другу
+                                small Сбор средств на оборудование дома для животных 
+                            .btn__wrapper
+                                button.btn.yellow Помощь сейчас
+                                button.btn.border Все программы 
+                        .item
+                            h2
+                                |Помощь другу
+                                small Сбор средств на оборудование дома для животных 
+                            .btn__wrapper
+                                button.btn.yellow Помощь сейчас
+                                button.btn.border Все программы 
+                        .item
+                            h2
+                                |Помощь другу
+                                small Сбор средств на оборудование дома для животных Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus optio soluta in laborum! Harum mollitia architecto, nisi doloremque cum non officiis ipsa suscipit magni corrupti culpa iure error labore deserunt?
+                            .btn__wrapper
+                                button.btn.yellow Помощь сейчас
+                                button.btn.border Все программы 
+                    .owl-nav
+                        .navs
+                        .dots
+                    .links__wrapper
+                        a(href="") Новости
+                        a(href="") Статьи
+                .quote__wrapper
+                    .quote
+                        span.bold Цитата недели
+                        i «Универсальный закон сохранения энергии: Ничто не возникает ниоткуда. Ничто не исчезает никуда» (с)
             
         include pug/scripts.pug

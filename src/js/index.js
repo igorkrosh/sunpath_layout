@@ -4,6 +4,8 @@ function Core()
 {
     SetTabSwitcher();
     SetModal();
+
+    InitOwlCarousel();
 }
 
 function SetTabSwitcher()
@@ -94,5 +96,15 @@ function HideModal(modalId)
         $(modalId).removeClass('active');
         $(modalId + ' .modal__dialog').removeClass('fadeOutDownBig');
         $('.modal__backdrop').remove();
+    });
+}
+
+function InitOwlCarousel()
+{
+    $('section.main__section .owl-carousel').owlCarousel({
+        items: 1,
+        navContainer: 'section.main__section .navs',
+        dotsContainer: 'section.main__section .dots',
+        autoHeight: true
     });
 }

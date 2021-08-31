@@ -16,7 +16,7 @@ let path = {
         pug: `${sourceFolder}/*.pug`,
         css: [`${sourceFolder}/scss/style.scss`, `${sourceFolder}/scss/bundle.scss`],
         js: [`${sourceFolder}/js/index.js`],
-        img: `${sourceFolder}/images/**/*.+(png|jpg|gif|ico|svg|webp)`,
+        img: `${sourceFolder}/images/**/*.+(png|jpg|gif|ico|svg|webp|mp4)`,
         fonts: `${sourceFolder}/fonts/*.ttf`
     },
     watch: {
