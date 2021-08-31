@@ -29,9 +29,10 @@ html(lang="ru")
                         a(href="").fb
                         a(href="").vk
         section.main__section
-            <video class="bg__video" preload="auto" autoplay="true" loop="true" muted="muted" poster="assets/images/bg/first_section.jpg">
-                <source src="assets/images/bg.mp4" type='video/mp4' />
-            </video>
+            .bg__wrapper
+                <video class="bg__video" preload="auto" autoplay="true" loop="true" muted="muted" poster="assets/images/bg/first_section.jpg">
+                    <source src="assets/images/bg.mp4" type='video/mp4' />
+                </video>
             .container
                 .slider__wrapper
                     .slider.owl-carousel
@@ -66,5 +67,21 @@ html(lang="ru")
                     .quote
                         span.bold Цитата недели
                         i «Универсальный закон сохранения энергии: Ничто не возникает ниоткуда. Ничто не исчезает никуда» (с)
+        section.about_us
+            .container
+                h2.title Немного о нас 
+                .wrapper
+                    .col
+                        span.bold Кто мы? 
+                        .text
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla aperiam a voluptatibus. Possimus, officia et. Cupiditate possimus omnis optio repellendus neque eligendi magnam aut quas ut, error perferendis culpa dolorem.
+                    .col
+                        span.bold Кто мы? 
+                        .text
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla aperiam a voluptatibus. Possimus, officia et. Cupiditate possimus omnis optio repellendus neque eligendi magnam aut quas ut, error perferendis culpa dolorem.
+                    .col
+                        span.bold Кто мы? 
+                        .text
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla aperiam a voluptatibus. Possimus, officia et. Cupiditate possimus omnis optio repellendus neque eligendi magnam aut quas ut, error perferendis culpa dolorem.
             
         include pug/scripts.pug
