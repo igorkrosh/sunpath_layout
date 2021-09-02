@@ -429,6 +429,13 @@ section.main__section:after
     justify-content: center;
 }
 
+.btn.sm
+{
+    min-height: 35px;
+    min-width: 140px;
+    font-size: 15px;
+}
+
 .btn.yellow
 {
     background: #ffcd05;
@@ -797,6 +804,44 @@ section.our__programms
                 {
                     margin-top: auto;
                 }
+            }
+        }
+    }
+}
+
+section.news__sect
+{
+    .news__wrapper
+    {
+        display: flex;
+        justify-content: space-between;
+
+        .news__item
+        {
+            width: 360px;
+            background: #282828;
+            color: #fff;
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .news__title
+            {
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+
+            .date
+            {
+                font-size: 14px;
+                color: #ffcd05;
+            }
+
+            .btn
+            {
+                color: #000;
             }
         }
     }
