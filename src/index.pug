@@ -225,6 +225,46 @@ html(lang="ru")
                         .desc
                             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, doloremque obcaecati. Quisquam corrupti enim, ab deserunt commodi odit, harum vel dolorem ullam culpa, nostrum saepe velit animi? Reiciendis, iste autem.
                         a.btn.sm.yellow Подробнее
+        section.subscribe__sect
+            .container
+                form(action="").subscribe__form
+                    span.form__title Подпишитесь на нашу рассылку
+                    input(type="text" placeholder="Ваш E-mail")
+                    .btn__wrapper
+                        button.btn.yellow Подписаться
+                    span.policy Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности
+        footer
+            .container
+                a.logo
+                    img(src="assets/images/logo_black.png")
+                ul.menu
+                    li 
+                        a(href="") Главная
+                    li 
+                        a(href="") О нас
+                    li 
+                        a(href="") Программы 
+                    li 
+                        a(href="") Успешные истории
+                    li 
+                        a(href="") Помощь
+                    li 
+                        a(href="") Контакты
+                .contacts__wrapper
+                    .icons__wrapper
+                        a(href="").tg
+                        a(href="").inst
+                        a(href="").fb
+                        a(href="").vk
+                    a(href="").contacts.phone +7 (123) 456-78-90
+                    a(href="").contacts.mail info@sunwayfund.ru 
+                .info
+                    a(href="").policy Политика конфиденциальности
+                    span.copy Copyrigth 2021 - все права защищены. Копирование информации без указания источника преследуется законом 
+                    span.dev 
+                        |Разработака сайта - 
+                        a(href="") Salut-Promo
+                    
                 
                 
         include pug/scripts.pug

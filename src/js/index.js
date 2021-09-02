@@ -121,7 +121,7 @@ function InitOwlCarousel()
         center: true,
         autoWidth: true,
         navContainer: 'section.successful_stories .navs',
-        nav: true
+        nav: true,
     }).on('translated.owl.carousel', function(event) {
         $('section.successful_stories .owl-carousel .center').prev().addClass('big');
     }).on('change.owl.carousel', function(event) {

@@ -847,4 +847,164 @@ section.news__sect
     }
 }
 
+section.subscribe__sect
+{
+    .container
+    {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+form.subscribe__form
+{
+    display: flex;
+    flex-direction: column;
+    background: #eeeeee;
+    padding: 70px 40px;
+    width: 520px;
+    border-radius: 15px;
+
+    .form__title
+    {
+        font-size: 25px;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+
+    input
+    {
+        background: none;
+        border: none;
+        height: 40px;
+        border-bottom: 1px solid #000;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+
+    input::placeholder
+    {
+        color: #000
+    }
+
+    .btn__wrapper
+    {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .policy
+    {
+        font-size: 12px;
+        text-align: center;
+        color: #696969;
+    }
+}
+
+footer
+{
+    padding: 40px 0;
+    border-top: 1px solid #e6e6e6;
+    .container
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo
+        {
+            width: 110px;
+        }
+
+        .menu
+        {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        .menu a
+        {
+            transition: 0.3s;
+        }
+
+        .menu a:hover
+        {
+            text-decoration: underline;
+            color: #6780da;
+        }
+
+        .contacts__wrapper
+        {
+            width: 180px;
+
+
+
+            .icons__wrapper 
+            {
+                justify-content: center;
+                margin-bottom: 10px;
+                a 
+                {
+                    border: none;
+                    background: #000;
+                    transition: 0.3s;
+                }
+                
+                a:hover
+                {
+                    background: rgba(0, 0, 0, 0.7);
+                }
+            }
+        }
+
+        .info
+        {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+
+            .policy
+            {
+                font-size: 12px;
+                text-decoration: underline;
+                transition: 0.3s;
+            }
+
+            .policy:hover
+            {
+                color: #6780da;
+            }
+
+            .copy
+            {
+                font-size: 10px;
+                margin: 15px 0;
+            }
+
+            .dev
+            {
+                font-size: 12px;
+                text-decoration: underline;
+
+                a
+                {
+                    transition: 0.3s;
+                    color: #6780da;
+                }
+
+                a:hover
+                {
+                    color: #a90808;
+                }
+            }
+        }
+    }
+}
+
 @import 'responce';
