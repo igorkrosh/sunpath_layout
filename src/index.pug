@@ -13,7 +13,7 @@ html(lang="ru")
             .container
                 a.logo
                     img(src="assets/images/logo.png")
-                .menu__wrapper
+                .menu__wrapper.desktop
                     a(href="").active Главная
                     a(href="") О нас
                     a(href="") Все сборы программ
@@ -28,6 +28,15 @@ html(lang="ru")
                         a(href="").inst
                         a(href="").fb
                         a(href="").vk
+                .btn__menu
+                    span
+            .menu__wrapper.mobile
+                    a(href="").active Главная
+                    a(href="") О нас
+                    a(href="") Все сборы программ
+                    a(href="") Поступления
+                    a(href="") Помощь
+                    a(href="") Контакты
         section.main__section
             .bg__wrapper
                 <video class="bg__video" preload="auto" autoplay="true" loop="true" muted="muted" poster="assets/images/bg/first_section.jpg">

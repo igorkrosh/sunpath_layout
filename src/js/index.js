@@ -8,6 +8,7 @@ function Core()
     InitOwlCarousel();
 
     SetProgress();
+    SetMobileMenu();
 }
 
 function SetTabSwitcher()
@@ -114,6 +115,17 @@ function InitOwlCarousel()
         items: 3,
         autoHeight: true,
         navContainer: 'section.need__help .navs',
+        responsive: {
+            1024: {
+                items: 3,
+            },
+            768: {
+                items: 2
+            },
+            0: {
+                items: 1
+            }
+        }
     });
 
     $('section.successful_stories .owl-carousel').owlCarousel({
@@ -140,4 +152,20 @@ function SetProgress()
         let value = $(progress).attr('value');
         $(progress).find('.line').css(`width`, `${value}%`);
     }
+}
+
+function SetMobileMenu()
+{
+    $('header .btn__menu').on('click', function () {
+        if ($(this).hasClass('active'))
+        {
+            $(this).removeClass('active');
+            $('.menu__wrapper.mobile').removeClass('active');
+        }
+        else
+        {
+            $(this).addClass('active');
+            $('.menu__wrapper.mobile').addClass('active');
+        }
+    })
 }
