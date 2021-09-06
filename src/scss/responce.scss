@@ -192,6 +192,20 @@
     {
         margin-bottom: 20px;
     }
+
+    section.how__help form.help
+    {
+        width: 100%;
+    }
+
+    section.programm__details .details__wrapper
+    {
+        .col
+        {
+            width: 100%;
+        }
+
+    }
 }
 
 @media(max-width: 576px)
@@ -295,4 +309,14 @@
         width: 100vw;
     }
 
+    section.main__section .slider__wrapper .slider .item .btn__wrapper.programm
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.programm__details .details__wrapper .details__progress
+    {
+        padding: 20px;
+    }
 }
