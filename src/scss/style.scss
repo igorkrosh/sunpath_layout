@@ -543,6 +543,87 @@ section.about_us
     }
 }
 
+.progress__wrapper
+{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+
+    .progress
+    {
+        width: 100%;
+        margin: 25px auto;
+        height: 5px;
+        background: #eeeeee;
+        position: relative;
+    }
+
+    .line
+    {
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background: #ffcd05;
+        left: 0;
+        top: 0;
+    }
+}
+
+.btn__wrapper.programm
+{
+    align-items: center;
+    display: flex;
+
+    .progress__wrapper
+    {
+        width: 255px;
+        margin: 0;
+        display: inline-flex;
+
+        .progress
+        {
+            margin-top: 0;
+        }
+    }
+
+    .price__wrapper
+    {
+        margin: 0;
+    }
+}
+
+section.main__section.programm
+{
+    min-height: 700px;
+
+    img.bg__video
+    {
+        min-width: none;
+        min-height: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.price__wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    
+    .price
+    {
+        font-weight: 700;
+    }
+
+    .collected .price
+    {
+        color: #6780da;
+    }
+}
+
 section.need__help
 {
     .container
@@ -578,49 +659,9 @@ section.need__help
             font-size: 20px;
         }
 
-        .progress__wrapper
-        {
-            display: flex;
-            flex-direction: column;
-            width: 80%;
-            margin: auto;
+        
 
-            .progress
-            {
-                width: 100%;
-                margin: 25px auto;
-                height: 5px;
-                background: #eeeeee;
-                position: relative;
-            }
-
-            .line
-            {
-                position: absolute;
-                width: 0%;
-                height: 100%;
-                background: #ffcd05;
-                left: 0;
-                top: 0;
-            }
-        }
-
-        .price__wrapper
-        {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 25px;
-            
-            .price
-            {
-                font-weight: 700;
-            }
-
-            .collected .price
-            {
-                color: #6780da;
-            }
-        }
+        
 
         .btn__wrapper
         {
@@ -1060,6 +1101,218 @@ footer
 .menu__wrapper.mobile
 {
     display: none;
+}
+
+section.programm__details
+{
+    .details__wrapper
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .programm__image
+        {
+            width: 100%;
+        }
+
+        .col
+        {
+            width: 48%;
+        }
+
+        h2
+        {
+            font-family: PlayfairDisplay;
+        }
+
+        .details__progress
+        {
+            padding: 40px;
+            background: #e1e1e1;
+
+            h2
+            {
+                font-size: 32px;
+                text-align: center;
+                
+            }
+
+            .btn__wrapper
+            {
+                text-align: center
+            }
+        }
+
+        
+    }
+
+    .history__wrapper
+    {
+        .table
+        {
+            display: flex;
+            flex-direction: column;
+
+            .th, .tr
+            {
+                width: 25%;
+                display: flex;
+            }
+
+            .tr
+            {
+                justify-content: center;
+            }
+
+            .th:first-child, .tr:first-child
+            {
+                width: 50%;;
+            }
+
+            .thead
+            {
+                display: flex;
+                flex-wrap: wrap;
+                border-bottom: 4px solid #e1e1e1;
+                padding: 10px;
+            }
+
+            .trow
+            {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 10px;
+                border-left: 1px solid #e1e1e1;
+                border-right: 1px solid #e1e1e1;
+                border-bottom: 1px solid #e1e1e1;
+            }
+
+            .tr
+            {
+                display: flex;
+                flex-direction: column;
+
+                small
+                {
+                    font-size: 11px;
+                    color: #7d7d7d;
+                }
+
+                .price
+                {
+                    font-weight: 700;
+                    color: #6780da;
+                }
+            }
+        }
+    }
+}
+
+section.how__help
+{
+    form.help
+    {
+        width: 680px;
+        padding: 40px;
+        background: #f2f2f2;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        margin: auto;
+
+        h2
+        {
+            font-family: PlayfairDisplay;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .payment__type
+        {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
+
+            label
+            {
+                margin: 0;
+                padding: 5px 15px;
+                z-index: 5;
+            }
+
+            .radio .checkmark
+            {
+                top: 0;
+                transform: none;
+                height: 100%;
+                width: 100%;
+                background: #fff;
+                border-radius: 0;
+                z-index: -2;
+            }
+
+            .radio .checkmark:after
+            {
+                width: 100%;
+                height: 100%;
+                border-radius: 0;
+                background: #ffcd05;
+            }
+        }
+
+        .form__group
+        {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 25px;
+
+            label
+            {
+                font-size: 12px;
+                margin-bottom: 5px;
+            }
+
+            input, select
+            {
+                height: 45px;
+                border: 1px solid #000;
+                padding: 10px;
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+
+        .checkbox__wrapper
+        {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 25px;
+
+            label
+            {
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+
+            .radio .checkmark
+            {
+                border: 1px solid #000;
+                border-radius: 0;
+            }
+
+            .radio .checkmark:after
+            {
+                border-radius: 0;
+                background: #576bb3; 
+            }
+            
+        }
+
+        .btn__wrapper
+        {
+            text-align: center;
+        }
+    }
 }
 
 @import 'responce';

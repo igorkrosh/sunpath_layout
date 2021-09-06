@@ -145,7 +145,7 @@ function InitOwlCarousel()
 
 function SetProgress()
 {
-    let progressArray = $('.card .progress');
+    let progressArray = $('.progress__wrapper .progress');
 
     for (let progress of progressArray)
     {
