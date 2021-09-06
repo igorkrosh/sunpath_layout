@@ -1,0 +1,40 @@
+include pug/mixins.pug
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        include pug/head.pug
+    body
+        +Header()
+        section.main__section.programm
+            .bg__wrapper
+                img(src="assets/images/programms/123.jpg").bg__video
+            .container
+                .slider__wrapper
+                    .slider
+                        .item
+                            h2
+                                |Коту - Талисману <br> Нужна ваша помощь
+                                
+                            .btn__wrapper.programm
+                                button.btn.yellow Помощь сейчас
+        section.programm__details
+            .container
+                h1.title О программе
+                .cke__wrapper
+                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt illo excepturi rem magni ratione necessitatibus, in inventore architecto quisquam fugiat quod magnam iusto veritatis facilis dolores, tempore expedita ex perferendis.
+
+        +SuccessfulStories()
+        +NeedHelp()
+        +NewsSect()
+        +SubscribeSect()
+
+        +Footer()
+                    
+                
+                
+        include pug/scripts.pug
